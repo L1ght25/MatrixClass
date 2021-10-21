@@ -149,8 +149,7 @@ class SquareMatrix(Matrix):
         return result
 
 
-J = SquareMatrix([[-1, 1, 0], [0, -1, 1], [0, 0, -1]])
-answer = SquareMatrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
-for i in range(1, 2022):
-    answer += (J ** i)
-print(answer)
+A = SquareMatrix([[1, 0, 0], [0, 1, 0], [0, 0, 1], [-8, -7, 0]])
+B = SquareMatrix([[1, 0, -2, -4], [0, 1, 0, -3], [1, 2, -2, -10]])
+C_1 = SquareMatrix([[-11, 5, -4, 3], [10, -3, 4, -2], [6, -2, 2, -1], [-4, 2, -1, 1]])
+print(A * B * C_1)
